@@ -9,41 +9,65 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
- </head>
 
-    <body>
-        <div class="ui fixed inverted menu">
-            <div class="ui container">
-                <a class="item active"><i class="inverted home icon"></i> Home</a>
-                <a class="ui item right"> <i class="inverted cog icon"></i> Settings</a>
-                <a class="ui item right"><i class="inverted location arrow icon"></i> Location</a>
-            </div>
+    <style>
+        body {
+            background-image: url('https://i.imgur.com/5k8cuFk.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+        }
+
+        .ui.footer.segment {
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        .clock {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 90px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <a class="item active"><i class="inverted home icon"></i> Home</a>
+            <a class="ui item right"> <i class="inverted cog icon"></i> Settings</a>
+            <a class="ui item right"><i class="inverted location arrow icon"></i> Location</a>
         </div>
+    </div>
 
-        <div class="ui inverted vertical footer segment">
-            <div class="ui center aligned container">
-                &nbsp; Credit: © 2018 Pokémon. TM, ® Nintendo. &nbsp;
-            </div>
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            &nbsp; Credit: © 2018 Pokémon. TM, ® Nintendo. &nbsp;
         </div>
+    </div>
 
-        <div class="ui center aligned container" style="padding-top:200px;">
-            <div id="MyClockDisplay" class="clock"></div>
-        </div>
+    <div class="ui center aligned container" style="padding-top:200px;">
+        <div id="MyClockDisplay" class="clock"></div>
+    </div>
 
-        <div class="ui center aligned container" style="padding-top:100px;">
-            <div class="ui centered black card" style="background-color: #282828; color:grey; width:30%;">
-                <div class="ui center aligned" style="padding-top:5px; padding-bottom:5px;">
-                    <audio autoplay controls loop>
+    <div class="ui center aligned container" style="padding-top:100px;">
+        <div class="ui centered black card" style="background-color: #282828; color:grey; width:30%;">
+            <div class="ui center aligned" style="padding-top:5px; padding-bottom:5px;">
+                <audio autoplay controls loop>
            <source src="https://vocaroo.com/media_command.php?media=s1CQZmB6wjCH&command=download_mp3"/>
           </audio>
-                </div>
-                <div class="description" style="color:white;">
-                    Pallet Town - Pokemon Heart Gold & Soul Silver Music Extended
-                </div>
+            </div>
+            <div class="description" style="color:white;">
+                Pallet Town - Pokemon Heart Gold & Soul Silver Music Extended
             </div>
         </div>
+    </div>
 
-    </body>
+</body>
 
 </html>
 <script>
